@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            /* quando aperta no link, ele fica amarelo */
+            color: yellow;
+        }
+
+        a::after{
+            content: "&#x2764;";
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank"> "	&#x2764 " Repositorio Git Hub</a></li>
+
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Canal do Youtube</a></li>
+
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/" target="_blank">Site do Curso em video</a></li>
+        
+        
+    </ul>
+</body>
+</html>

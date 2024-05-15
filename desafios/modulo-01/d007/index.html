@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência</p>
+
+    <picture>
+        <source media="(max-width: 715px)" srcset="arcoiris-p-343.jpg">
+        <source media="(max-width: 1050px)" srcset="arcoiris-m-624.jpg" type="image/jpeg">
+        <img src="arcoiris-g-1050.jpg" alt="Imagem do arco-íris">
+    </picture>
+
+
+    <h2>Imagem Horizontal Flexível</h2>
+
+    <picture>
+        <source media="(max-width:900px)" srcset="montanha-m-805" type="image/jpeg">
+        <img src="montanha-g-1360.jpg" alt="Montanha tamanho G">
+
+    </picture>
+
+</body>
+</html>
