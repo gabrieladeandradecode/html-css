@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+img{
+    border-radius: 10px;
+}
+
+div{
+    background-color: blue;
+    text-align: center;
+    margin: auto;
+}
+
