@@ -5,9 +5,18 @@ img{
     border-radius: 10px;
 }
 
-div{
-    background-color: blue;
+div.galeria{
+    background-color: rgba(220, 242, 166, 0.422);
+    margin: 5px;
+    display: inline-block;
+    width: 550px;
+    height: auto;
+    border: 1px solid rgb(45, 168, 235);
     text-align: center;
-    margin: auto;
+}
+
+div.galeria img{
+    width: 90%;
+    height: auto;
 }
 
