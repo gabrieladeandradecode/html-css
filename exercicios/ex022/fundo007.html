@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização de Caixa / Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-color: blueviolet;
+            height: 500px;
+            position: static;
+
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+        }
+
+        #conteudo{
+            background-color: yellow;
+            height: 200px;
+            width: 400px;
+            position: relative;
+
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            /* 100% de size para fazer a imagem encaixar / se adequar ao tamanho da caixa */
+
+            left: 50%;
+            top: 50%;
+
+            /* 20% do top até a caixa - pode ser px (na casa de centena) ou % */
+        }
+    </style>
+
+</head>
+<body>
+<!-- container é o que contem algo
+div é um exemplo de container
+section tb  -->
+    <div id="container">
+        <div id="conteudo">
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
