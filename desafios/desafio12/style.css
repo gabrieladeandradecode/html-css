@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    color: white;
+    background-color: black;
+    min-height: 180px;
+    width: auto;
+    text-align: center;
+}
+
+h1{
+    font-family: "Passion One";
+    font-size: 130px;
+    padding: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* main div{
+    padding: 80px;
+} */
+
+main p{
+    font-size: 50px;
+    font-family: "Sriracha";
+    
+    
+    margin: 10px;
+}   
+
+main div{
+    padding: 80px;
+
+}
+
+#flor{
+    color: white;    
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;    
+}
+
+#livro{
+    color: white;
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+}
+
