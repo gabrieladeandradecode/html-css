@@ -4,17 +4,23 @@
     
 }
 
+html, body{
+    min-height: 100vh;
+}
+
 header{
     color: white;
     background-color: black;
     min-height: 180px;
     width: auto;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 h1{
     font-family: "Passion One";
-    font-size: 130px;
+    font-size: 10vw;
+    text-transform: uppercase;
     padding: 30px;
 }
 
@@ -22,6 +28,7 @@ a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 3px;
 }
 
 a:hover{
@@ -33,26 +40,35 @@ a:hover{
 } */
 
 main p{
-    font-size: 50px;
     font-family: "Sriracha";
+    margin-left: 10px;
     
-    
-    margin: 10px;
 }   
 
-main div{
-    padding: 80px;
-
+section{
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    font-size: 3.5vw;
 }
 
-#flor{
-    color: white;    
+section.imagem{
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.647);
+    background-size: cover;    
+}
+
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.208);
+    color: white;
+    text-shadow: 1px 1px 0 black;
+}
+
+section#flor{
     background-image: url(imagens/background001.jpg);
     background-attachment: fixed;    
+    background-position: right center;
 }
 
-#livro{
-    color: white;
+section#livro{
     background-image: url(imagens/background002.jpg);
     background-attachment: fixed;
 }
