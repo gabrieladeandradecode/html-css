@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            font-size: 20px;
+            position: relative;
+        }
+
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        /* fica acima da tabela, e vai pela semântica */
+
+        td, th{
+            border: solid 1px black;
+            padding: 10px;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: cadetblue;
+        }
+        /* faz o cabeçalho descer quando rola a página, para acompanhar a tabela = "Efeito Zebrado"*/
+
+        tfoot, thead{
+            background-color: cadetblue;
+            color: rgba(255, 255, 255, 0.926);
+        }
+        
+        td.num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        /* de 2 em 2 fica colorido
+        odd = ímpar, (2n-1) 
+        even = par
+        */
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.973.190</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.322.692</td>
+            </tr>
+            
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.219.679</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.850.513</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.824.665</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num"><strong>111.190.739</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed ab similique soluta laudantium numquam omnis laborum animi nam est iusto facere unde consequuntur nemo beatae tempora ut, fugit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quae, ducimus, architecto, tempora officiis facilis doloribus magni vel eos enim et assumenda praesentium perferendis adipisci sapiente in doloremque similique ipsam.</p>
+
+</body>
+</html>
