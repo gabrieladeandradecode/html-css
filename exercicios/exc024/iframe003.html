@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no iframe</title>
+    <style>
+        iframe#quadro {
+            width: 95vw;
+            height: 50vh;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegação no iframe</h1>
+
+    <ul>
+        <li><a href="pag-extras/pag01.html" target="iframe">Primeira Página</a></li>
+        <li><a href="pag-extras/pag02.html" target="iframe">Segunda Página</a></li>
+        <li><a href="pag-extras/pag03.html" target="iframe">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit repellendus at ipsum nobis, fuga eum voluptatibus accusamus qui aperiam voluptates delectus culpa inventore ea error minus quisquam quos. Aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis beatae repellat quos commodi consectetur vel eaque blanditiis, minima asperiores tenetur nam? Accusamus veritatis pariatur blanditiis architecto repudiandae aspernatur sit.</p>
+
+    <iframe id="quadro" name="iframe" srcdoc="<h1>Este é o parâmetro srcdoc do iframe</h1><p>Tags HTML são usadas dentro do srcdoc, semelhante a uma página HTML sendo criada. Imagens podem ser carregadas aqui também, mas deve-se usar aspas simples, e não duplas. Também deve ter cuidado para não confundir e apagar as tags de abertura e fechamento.</p><img src='img/vscode-icon.png'>">
+        <p>Seu navegador não é compatível com iframe</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit repellendus at ipsum nobis, fuga eum voluptatibus accusamus qui aperiam voluptates delectus culpa inventore ea error minus quisquam quos. Aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis beatae repellat quos commodi consectetur vel eaque blanditiis, minima asperiores tenetur nam? Accusamus veritatis pariatur blanditiis architecto repudiandae aspernatur sit.</p>
+
+</body>
+</html>
