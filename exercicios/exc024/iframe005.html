@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe com script</title>
+    <style>
+        #iframe {
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iframe com script</h1>
+    <iframe id="iframe" src="pag-extras/pag05.html" sandbox="allow-scripts"></iframe>
+
+    <p>O atributo sandbox="allow-scripts" permite execução de scripts de outro site no iframe no site do desenvolvedor.</p>
+
+    <p>Se colocar sandbox="sandbox", o sandbox não permitirá nada, nem execução de scripts, como abaixo:</p>
+
+    <iframe id="iframe" src="pag-extras/pag05.html" sandbox="sandbox"></iframe>
+</body>
+</html>
