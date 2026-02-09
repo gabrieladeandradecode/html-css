@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com nome e senha como input e required</title>
+</head>
+<body>
+    <h1>Teste de Formulário com required, minlength, maxlength e size</h1>
+   <form action="cadastrar.php" method="post">
+    <div>
+        <label for="nome">Nome: </label> 
+        <input type="text" name="nome" required>
+    </div>
+
+    <div>
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" required>
+    </div>
+
+    <input type="submit" Enviar>
+    <input type="reset" Resetar>
+    
+   </form> 
+
+   <p>Pode usar paragrafo ou div para fazer o input, mas o mais usado e talvez ideal é o div.</p>
+
+   <h3>Observação: o Live Server dá problema para visualizar o arquivo cadastrar.php</h3>
+   <h3>Tem que abrir o arquivo localmente mesmo, como pela pasta de arquivos e então, sim, consegue visualizar a mensagem no arquivo cadastrar.php</h3>
+</body>
+</html>
