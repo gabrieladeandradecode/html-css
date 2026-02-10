@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Form com number, month, date e time</h1>
+
+    <form action="cadastrar.php" method="get">
+        <p> Nome:
+            <label for="inome"></label>
+            <input type="text" name="nome" id="inome" required placeholder="Nome">
+        </p>
+        <p> Média:
+            <label for="inumber"></label>
+            <input type="number" name="number" id="inumber" min="0" max="10" step="0.5" placeholder="Média">
+        </p>
+        <p> Mês:
+            <label for="imonth"></label>
+            <input type="month" name="month" id="imonth" value="2026-04"> 
+        </p>
+        <p> Data:
+            <label for="idate"></label>
+            <input type="date" name="date" id="idate" required>
+        </p>
+        <p> Hora: 
+            <label for="itime"></label>
+            <input type="time" name="time" id="itime">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
