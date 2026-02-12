@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Input color e range </h1>
+
+    <form action="cadastrar.php">
+        <fieldset>
+            <legend>Cores</legend>
+            <div>
+                <label for="icorW">Selecione uma cor dentro da caixinha: </label>
+                <input type="color" name="cor" id="icorW" value="#ffffff">
+            </div>
+            <div>
+                <label for="icorW">Selecione uma segunda cor: </label>
+                <input type="color" name="cor" id="icorW" value="#c8a2c8">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Nível de Satisfação</legend>
+            <label for="isat"></label> Escolha um nível de satisfação de 1 a 5:
+            <input type="range" name="sat" id="isat" value="1" min="1" max="5">
+            <p>Curiosidade: como faço para mostrar o value do input type range? Usando JavaScript, aplicando evento e capturando elementos por DocumentGetElement para mudar o valor deles por innerHTML ou textcontent</p>
+        </fieldset>
+    </form>
+</body>
+</html>
