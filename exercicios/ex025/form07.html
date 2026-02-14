@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastrar.php" method="post">
+        <div>  
+            <label for="isel">Estados:</label>
+            <select name="sel" id="isel">
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <p>
+            <label for="inputT">Profissão:</label>
+            <input type="text" id="inputT" list="idatalist">
+            <datalist id="idatalist">
+                <option value="Desenvolvedor">Desenvolvedor</option>
+                <option value="Professor">Professor</option>
+                <option value="Advogado">Advogado</option>
+            </datalist>
+        </p>
+
+        <label for="itxarea">Mensagem: </label>
+        <p><textarea name="txarea" id="itxarea"></textarea></p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
