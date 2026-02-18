@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastrar.php" method="get">
+        <p>
+            <label for="soma1">Soma 1:</label>
+            <input type="number" id="soma1" min="0" max="50" required oninput="result.innerHTML = Number(soma1.value) + Number(soma2.value)">
+        </p>
+
+        <p>
+            <label for="soma2">Soma 2:</label>
+            <input type="number" id="soma2" min="0" max="50" required oninput="result.innerHTML = Number(soma1.value) + Number(soma2.value)">
+        </p>
+
+        <p>
+            <label for="result">Resultado:</label>
+            <output id="result">0</output>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

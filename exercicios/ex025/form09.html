@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    body {
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<body>
+    <form action="cadastrar.php">
+        <div>
+            <label for="ibolinha"></label>
+            <input type="range" name="bolinha" id="ibolinha" min="0" max="10" oninput="valorB.innerHTML = Number(ibolinha.value)">
+
+            <label for="valorB"></label>
+            <output id="valorB">5</output>
+        </div>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+            
+    </form>
+</body>
+</html>
