@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* Este arquivo css é para a orientação do dispositivo landscape / paisagem, deitado */
+
+body {
+    background-image: url(imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
