@@ -3,35 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
+    <title>Media Query com Menu Responsivo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <header>
-        <h1>Meu Site</h1>
-        <menu>
+        <h1>Leitura da Missa</h1>
+        <span id="menuBurguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>        
+        <menu id="itensMenu">
             <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="index.html">Evangelho</a></li>
+                <li><a href="1leitura.html">1° Leitura</a></li>
+                <li><a href="salmo.html">Salmo</a></li>
             </ul>
         </menu>
     </header>
 
     <main>
         <article>
-            <h2>Testando Media Queries com Menu Responsivo</h2>
+            <h2>Dia 23/02/2026 - Liturgia Diária</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, iusto non? Quia, blanditiis distinctio temporibus optio, alias iste recusandae ratione voluptate, officiis quod sed veritatis in quas! Dignissimos, assumenda tempora.</p>
+            <p style="font-weight: bolder;">Evangelho (Mt 25,31-46) </p>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste laborum veritatis laboriosam earum voluptates dolores temporibus commodi, natus fugiat ipsa, rerum, soluta assumenda libero cum magnam consequatur ea? Deleniti, voluptate.</p>
+            <p>- Salve Cristo, luz da vida, companheiro na partilha!</p>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nisi quo beatae atque delectus ipsa dolorum vel rerum, perspiciatis tempore quaerat iste repellat fuga tempora quas suscipit reiciendis? Adipisci, officia.</p>
+            <p>- Eis o tempo de conversão; eis o dia da salvação.</p>
+
+            <p>Proclamação do Evangelho de Jesus Cristo segundo Mateus.</p>
+
+            <p style="font-weight: bolder;">- Glória a vós, Senhor. </p>
+                    
+            <p>
+                Naquele tempo, disse Jesus a seus discípulos: 31 "Quando o Filho do Homem vier em sua glória, acompanhado de todos os anjos, então se assentará em seu trono glorioso. 32 Todos os povos da terra serão reunidos diante dele, e ele separará uns dos outros, assim como o pastor separa as ovelhas dos cabritos. 33 E colocará as ovelhas à sua direita e os cabritos à sua esquerda. 34 Então o Rei dirá aos que estiverem à sua direita: 'Vinde benditos de meu Pai! Recebei como herança o Reino que meu Pai vos preparou desde a criação do mundo! 35 Pois eu estava com fome e me destes de comer; eu estava com sede e me destes de beber; eu era estrangeiro e me recebestes em casa; 36 eu estava nu e me vestistes; eu estava doente e cuidastes de mim; eu estava na prisão e fostes me visitar'. 37 Então os justos lhe perguntarão: 'Senhor, quando foi que te vimos com fome e te demos de comer? com sede e te demos de beber? 38 Quando foi que te vimos como estrangeiro e te recebemos em casa, e sem roupa e te vestimos? 39 Quando foi que te vimos doente ou preso, e fomos te visitar?' 40 Então o Rei lhes responderá: 'Em verdade eu vos digo, que todas as vezes que fizestes isso a um dos menores de meus irmãos, foi a mim que o fizestes!' 41 Depois o Rei dirá aos que estiverem à sua esquerda: 'Afastai-vos de mim, malditos! Ide para o fogo eterno, preparado para o diabo e para os seus anjos. 42 Pois eu estava com fome e não me destes de comer; eu estava com sede e não me destes de beber; 43 eu era estrangeiro e não me recebestes em casa; eu estava nu e não me vestistes; eu estava doente e na prisão e não fostes me visitar'. 44 E responderão também eles: 'Senhor, quando foi que te vimos com fome, ou com sede, como estrangeiro, ou nu, doente ou preso, e não te servimos?' 45 Então o Rei lhes responderá: 'Em verdade eu vos digo, todas as vezes que não fizestes isso a um desses pequeninos, foi a mim que não o fizestes!' 46 Portanto, estes irão para o castigo eterno, enquanto os justos irão para a vida eterna".
+                
+                
+            </p>
+
+            <p>— Palavra da Salvação.</p>
+            <p style="font-weight: bolder;">— Glória a vós, Senhor.</p>
+
+            <p style="font-size: small; font-style: italic;">Conferência Nacional dos Bispos do Brasil</p>
+            <p style="font-size: small; font-style: italic;">© Todos os direitos reservados.</p>
+            
         </article>
     </main>
-
     
+    <script src="script.js"></script>
 </body>
 </html>

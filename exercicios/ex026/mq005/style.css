@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
+/* Versão Mobile First - Seguindo conceito de 1° versão móvel*/
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body, html {
@@ -20,7 +23,7 @@ header > h1 {
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu ul {
@@ -52,10 +55,27 @@ main {
 
 article h2 {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 article p {
     text-align: justify;
     margin-bottom: 20px;
+    padding: 5px;
     text-indent: 20px;
+    line-height: 2.5;
+}
+
+#menuBurguer {
+    display: block;  /* span é inline, tem que ser block,e por ser block, ocupa a linha toda */
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menuBurguer:hover {
+    background-color: aliceblue;
+    color: black;
 }
