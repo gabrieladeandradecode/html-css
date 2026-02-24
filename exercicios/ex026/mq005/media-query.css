@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* Versão demais mídias */
+
+/* Typical Device Breakpoints
+-------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px (já tem, é o style.css, mobile-first)
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+
+-------------------------------
+*/
+
+/* se quiser ocultar opções e deixar ícone menu hamburguer no tablet, é só trocar min-width para 992px */
+
+@media screen and (min-width: 768px) {
+    #menuBurguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+}
