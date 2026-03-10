@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Column</title>
+    <style>
+        body {
+            /* font-size: 24px; */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        div.conteiner {
+            display: flex;
+            height: 250px;
+            background-color: rgba(137, 43, 226, 0.392);
+            flex-flow: column-reverse wrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+
+        div.item {
+            text-align: center;
+            background-color: cyan;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexible Box</h1>
+
+    <div class="conteiner">
+        <div class="item">Bloco A</div>
+        <div class="item">Bloco B</div>
+        <div class="item">Bloco C</div>
+        <div class="item">Bloco D</div>
+        <div class="item">Bloco E</div>
+        <div class="item">Bloco F</div>
+        <div class="item">Bloco G</div>
+    </div>
+</body>
+</html>
