@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            font-size: 24px;
+        }
+
+        div.conteiner {
+            background-color: rgba(137, 43, 226, 0.397);
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item {            
+            text-align: center;
+            background-color: rgba(0, 255, 255, 0.912);
+            border: 1px solid rgb(0, 0, 0);
+            flex-basis: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade flex-basis</h1>
+
+    <div class="conteiner">
+        <div class="item">Item A</div>
+        <div class="item">Flex Basis</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">Testando tamanho do flex-item</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
