@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    overflow: hidden;
+}
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header > nav > a {
+    width: 90vw;
+}
+
+/* ideia: pode adicionar menu hambúrguer aqui */
+/* é um exercicio que usa flexbox, media query e pode ter menu hambúrguer */
