@@ -9,13 +9,10 @@
             border: 3px blue solid;
             height: 250px;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template: repeat(3, auto) / repeat(2, auto);
             gap: 5px;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: normal; 
+            place-items: start center;
+            place-content: space-between end;
         }
 
         .item {
@@ -35,5 +32,12 @@
         <div class="item">G</div>
         <div class="item">H</div>
     </div>
+
+    <h3>Bizu CSS Grid Layout</h3>
+    <ul>
+        <li>place-items: align-items justify-items;</li>
+        <li>place-content: align-content justify-content;</li>
+        <li>grid-template: row / column;</li>
+    </ul>
 </body>
 </html>
