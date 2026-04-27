@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    /* grid-template: repeat(4, auto) / repeat(3, auto);  */
+    text-align: center;
+    grid-template-columns: 300px 80px;
+    grid-template-rows: 50px 30px 120px 30px;
+}
+
+.topo {
+    background-color: rgba(58, 23, 175, 0.222);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+

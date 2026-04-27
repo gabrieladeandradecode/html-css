@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Grid</title>
+    <style>
+        .container {
+            background-color: aqua;
+            display: grid;
+            grid-auto-flow: column;
+        }
+
+        .link1 {
+            background-color: aquamarine;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <a class="link1" href="#">Home</a>
+        <a class="link2" href="#">Page</a>
+        <a class="link3" href="#">Link</a>
+    </nav>
+</body>
+</html>
